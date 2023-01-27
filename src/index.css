@@ -1,0 +1,301 @@
+/*-------------------------------GENERAL Properties-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  --logo-font :'Xanh Mono', monospace;
+  --main-color :#272B30 ;
+  --second-color: #32383E ;
+  --third-color: #212529 ;
+  --new_blue-color : #4799eb ;
+  --light-color : #aaa;
+}
+.second-color{
+  color: var(--second-color);
+}
+.third-color{
+  color: var(--third-color);
+} 
+.new-light-color{
+  color: var(--light-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default{
+  cursor: default;
+
+}
+/*-------------------------------NAVBAR COMPONANT-------------------------*/
+.logo{
+  font-family: var(--logo-font);
+}
+.navbar img{
+  width: 70px;
+  height: 45px;
+  filter: drop-shadow(1px 1px 3px #1983e6ce);
+}
+.navLink {
+  color:  var(--third-color) ;  
+ }
+
+/*-------------------------------LOGIN COMPONANT-------------------------*/
+.login-header img{
+    width: 120px;
+    height: 80px;
+    filter: drop-shadow(1px 1px 3px #1983e6ce);
+}
+.login .end-box{
+  background-color: var(--second-color);
+}
+.login-btn{
+  background-color: #32383E;
+}
+.login-footer {
+  margin: 1rem 0;
+  color: inherit;
+}
+.login_border{
+  border: 0;
+  border-top: 1px solid #505459;
+}
+.title_shaow{
+  text-shadow: -1px -1px 0 rgb(0 0 0 / 30%);
+}
+input{
+  color: white !important;
+}
+input[type]{
+  color: whiten !important;
+  background-color: #1c1e22 !important;
+}
+.login p{
+  font-size: 15px;
+}
+.my_input{
+  background-color: #1c1e22;
+  border: 0 solid rgba(0,0,0,.6);
+  border-radius: 5px;
+}
+/*-------------------------------Home COMPONANT-------------------------*/
+
+.home_header{
+  padding: 0 !important;
+  background-image: url("../src/Componants/Home/paladins.png");
+  background-repeat: no-repeat;
+  background-color: #1c1e22;
+  background-position: top;
+  background-size: contain;
+  /* height: 45vh; */
+}
+.free {
+  background-color: var(--new_blue-color) ;
+  font-size: 12px;
+}
+.ftg-blue{
+  color: rgb(226, 43, 211);
+}
+.home_card{
+  transition: all ease 0.25s;
+  max-height: 400px;
+  background-color: var(--second-color);
+}
+
+.home_card:hover{
+  transform: scale(1.03);
+}
+.allGames_card{
+  transition: all ease 0.22s;
+  background-color: var(--second-color);
+  font-size: 16px;
+}
+
+.allGames_card:hover{
+  transform: scale(1.03);
+}
+.game_type{
+  font-size: 10px;
+}
+#allGames{
+  
+}
+
+
+/* DETAILS */
+.details  .discreption {
+  font-size: 1.1rem;
+}
+.details  h6 {
+  font-size: .95rem;
+  font-weight: 300;
+  color: #646C74;
+}
+.details .sec p {
+  color:  var(--light-color);
+  font-size: .95rem;
+
+
+}
+
+.details .btn1{
+  background-color: #32383E;
+}
+.details .btn2 {
+  background-image: linear-gradient(#4799eb,#4799eb 60%,#49acff);
+  background-repeat: no-repeat;
+  filter: none;
+  color: #fff;
+  background-color: #4799eb;
+  border-color: #4799eb;
+}
+.loading_card{
+  height: 200px;
+  width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+
+  .game_detail_card{
+    position: relative !important;
+  }
+  }
+@media only screen and (max-width: 600px) {
+
+.home_header_content{
+  padding: 0rem 0rem ;
+  
+}
+.game_detail_card{
+  position: relative !important;
+  margin-bottom: 1.5rem;
+}
+}
+.home_header_content{
+  margin-top: -1rem;
+  padding: 5rem 0rem ;
+  
+}
+.home_header_content  h1{
+  color: var(--light-color) ;
+}
+
+
+/* LAZY LOAD  */
+.LazyLoad {
+  /* background-color: #32383E; */
+  background-image: url("../src/assets/loading_img.jpg");
+  border: solid yellow 1px;
+  filter: blur(7px);
+  background-position: center center; 
+  transition: filter 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
+
+  min-height: 150px;
+}
+.myLazy{
+  /* height: inherit !important; */
+
+}
+
+.is-visible {
+  filter: blur(0px);
+  opacity: 1;
+  border: 0;
+
+}
+li{
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+@media (max-width: 575px) {
+  .home___img{
+    background-color: white;
+    height: 700px;
+  }
+  .LazyLoad{
+    min-height: 120px;
+  }
+  
+}
+ @media (min-width: 576px) {
+  .home___img{
+    background-color: red;
+    height: 700px;
+  }
+   .LazyLoad{
+    min-height: 120px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .home___img{
+    background-color: blue;
+    height: 700px;
+  }
+  .allGames_card .LazyLoad{
+    min-height: 70px;
+  }
+  .slides .LazyLoad{
+    min-height: 250px;
+  }
+  .home_img .LazyLoad{
+    min-height: 70px;
+  }
+ 
+  .allGames_card {
+    font-size: small;
+    font-size: 14px;
+  }
+
+  .allGames_card h5 {
+    font-size: 16px;
+  }
+
+
+}
+@media (min-width: 992px){
+  .home___img{
+    background-color: black;
+    height: 700px;
+  }
+  .allGames_card .LazyLoad{
+    min-height: 70px;
+  }
+  .slides .LazyLoad{
+    min-height: 250px;
+  }
+  .game_detail_card .LazyLoad , .home_img .LazyLoad{
+    min-height: 80px;
+  } 
+
+  
+
+}
+@media (min-width: 1200px){
+  .home___img{
+    background-color: yellow;
+    height: 700px;
+  }
+  .slides .LazyLoad{
+    min-height: 250px;
+  }
+  .allGames_card .LazyLoad ,.game_detail_card .LazyLoad{
+    min-height: 70px;
+  }
+  .home_img .LazyLoad{
+    min-height: 100px;
+  }
+
+}
+
